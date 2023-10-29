@@ -27,7 +27,6 @@ local-ai
 !api/localai
 
 # Ignore models
-models/*
 test-models/
 test-dir/
 

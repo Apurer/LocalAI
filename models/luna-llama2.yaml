@@ -1,0 +1,19 @@
+backend: llama
+context_size: 2000
+f16: true ## If you are using cpu set this to false
+gpu_layers: 50
+name: luna-llama2
+parameters:
+  model: luna-ai-llama2-uncensored.Q4_0.gguf
+  temperature: 0.2
+  top_k: 40
+  top_p: 0.65
+stopwords:
+- "HUMAN:"
+- "GPT:"
+roles:
+  user: " "
+  system: " "
+template:
+  chat: luna-llama2-chat
+  completion: luna-llama2-completion
