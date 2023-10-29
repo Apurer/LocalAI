@@ -5,9 +5,9 @@ parameters:
   top_k: 80
   temperature: 0.2
   top_p: 0.7
-context_size: 4000
+context_size: 2000
 f16: true ## If you are using cpu set this to false
-gpu_layers: 60
+gpu_layers: 20
 stopwords:
 - "HUMAN:"
 - "GPT:"
